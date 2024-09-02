@@ -1,0 +1,279 @@
+/* GLOBAL */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #222;
+}
+
+/* img {
+    min-width: 100%;
+    height: auto;
+} */
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1350px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MAIN-CONTENT */
+.main-content {
+    flex-grow: 1;
+}
+
+/* BUTTON */
+.button {
+    width: 260px;
+    height: 51px;
+    padding: 12px;
+    background-color: rgba(234, 98, 92, 1);
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    border: rgba(234, 98, 92, 1);
+}
+
+/* SITE-HEADER */
+/* NAV-BAR */
+.site-header {
+    margin-top: 30px;
+}
+
+.site-header-container {
+    display: flex;
+}
+
+.logo {
+    width: 35px;
+    height: 42px;
+}
+.site-header-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-left: 502px;
+}
+.site-header-navbar-item {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+}
+
+.site-header-navbar-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-header-navbar-item-link {
+    text-decoration: none;
+}
+
+.site-header-search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 40px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+}
+
+/* .site-header-search-link {
+    text-decoration: none;
+} */
+
+
+/* INTRO-SECTION */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.intro-section-div {
+    width: 490px;
+    height: 291px;
+}
+
+.intro-section-heading {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: black;
+}
+
+.intro-section-text {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(119, 119, 119, 1);
+    border-left: 3px solid rgba(136, 136, 136, 1);
+}
+
+.intro-section-img {
+    width: 390px;
+    height: 565px;
+}
+
+/* FEATURES-SECTION */
+.features-section {
+    display: flex;
+}
+
+.features-section-items {
+    width: 280px;
+    margin-top: 70px;
+}
+
+.features-section-items:not(:last-child) {
+    margin-right: 150px;
+}
+
+.features-section-items-heading {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 1);
+}
+
+.features-section-items-text {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(51, 51, 51, 1);
+}
+
+.features-section-items-text-link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(234, 98, 92, 1);
+}
+
+/* INFO-SECTION */
+.info-section {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.info-section-div {
+    width: 490px;
+    height: 387px;
+    margin: 0;
+    margin-right: 250px;
+}
+
+.info-section-heading {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.info-section-text {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(119, 119, 119, 1);
+    border-left: 3px solid rgba(136, 136, 136, 1);
+}
+
+/* IMG-INFO-SECTION */
+.img-info-section {
+    width: auto;
+    height: 831px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 70px;
+    background-image: url(../img/runners.jpg);
+}
+
+.img-info-div {
+    width: 490px;
+    height: 351px;
+    margin-right: 125px;
+}
+
+.img-info-heading {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.img-info-text {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    border-left: 3px solid rgba(255, 255, 255, 1);
+}
